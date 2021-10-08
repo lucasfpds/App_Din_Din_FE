@@ -115,7 +115,7 @@ async function handleRegisterDocument(body, method, id) {
 
     try {
       
-      const api = await fetch(`https://dindin-api-desafioback.herokuapp.com/`, {
+      const api = await fetch(`https://dindin-api-desafioback.herokuapp.com/transactions`, {
       method: 'GET'
       });
       const data = await api.json()
