@@ -89,9 +89,9 @@ async function handleRegisterDocument(body, method, id) {
   function openModal(param, id){
     setIdDocument(id)
     if(param === 'add'){
-      setModal('')
+      setModal('openModal')
     } else {
-      setModalEdit('')
+      setModalEdit('openModal')
     }
   }
 

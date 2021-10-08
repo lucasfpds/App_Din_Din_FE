@@ -1,126 +1,193 @@
-
-.modal{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
-
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
+@keyframes scale-out-horizontal {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
 }
 
-.modal-container{
-    width: 70vh;
-    height: 95vh;
-    background: #FFFFFF;
-    border-radius: 20px;
-    padding: 61px 64px;
-    display: flex;
-    flex-direction: column;
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
-.close-icon{
-    all: unset;
-    position: absolute;
-    right: 36.5%;
-    top: 98px;
-    cursor: pointer;
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
 }
 
-.modal-container h1{
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 43px;
-    margin-bottom: 51px;
-}
-.modal-container>div{
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.credit-button, .debit-button{
-    background: linear-gradient(91.26deg, #05EDE3 0%, #3A9FF1 97.77%);
-    border-radius: 10px 0px 0px 10px;
-    border: none;
-    height: 60px;
-    width: 245px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-}
-.credit-button:hover{
-    background: linear-gradient(91.26deg, #06c7bd 0%, #3187ce 97.77%);
-    transform: scale(1.01);
-}
-.debit-button{
-    background: linear-gradient(91.66deg, #FA8C10 0%, #FF576B 90.32%);
-    border-radius: 0px 10px 10px 0px;    
-}
-.debit-button:hover{
-    background: linear-gradient(91.66deg, #cf740c 0%, #df4a5b 90.32%);
-    transform: scale(1.01);
+.modal-container {
+  width: 70vh;
+  height: 95vh;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 61px 64px;
+  display: flex;
+  flex-direction: column;
 }
 
-.modal-container label{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 9px;
+.close-icon {
+  all: unset;
+  position: absolute;
+  right: 36.5%;
+  top: 98px;
+  cursor: pointer;
 }
 
-.modal-container input{
-    width: 100%;
-    height: 63.49px;
-    border: 1px solid #555555;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin-bottom: 26px;
+.modal-container h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 51px;
 }
-.example{
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: -6%;
-    margin-bottom: 5.6%;
+.modal-container > div {
+  display: flex;
+  margin-bottom: 40px;
 }
 
-.warning{
-    align-self: center;
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 2%;
+.credit-button,
+.debit-button {
+  background: linear-gradient(91.26deg, #05ede3 0%, #3a9ff1 97.77%);
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  height: 60px;
+  width: 245px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
 }
-.btn-insert{
-    background: #645FFB;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: white;
-    height: 55px;
-    width: 236px;
-    align-self: center;
-    border: none;
+.credit-button:hover {
+  background: linear-gradient(91.26deg, #06c7bd 0%, #3187ce 97.77%);
+  transform: scale(1.01);
 }
-.btn-insert:hover{
-    background: #4b47c4;
-    transform: scale(1.01);
+.debit-button {
+  background: linear-gradient(91.66deg, #fa8c10 0%, #ff576b 90.32%);
+  border-radius: 0px 10px 10px 0px;
 }
-
-.hidden{
-    display: none;
+.debit-button:hover {
+  background: linear-gradient(91.66deg, #cf740c 0%, #df4a5b 90.32%);
+  transform: scale(1.01);
 }
 
-.inactive-button{
-    background: #B9B9B9;  
+.modal-container label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 9px;
 }
-.inactive-button:hover{
-    background: #858585;
-    transform: scale(1.01);
+
+.modal-container input {
+  width: 100%;
+  height: 63.49px;
+  border: 1px solid #555555;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 26px;
+}
+.example {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: -6%;
+  margin-bottom: 5.6%;
+}
+
+.warning {
+  align-self: center;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+.btn-insert {
+  background: #645ffb;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  height: 55px;
+  width: 236px;
+  align-self: center;
+  border: none;
+}
+.btn-insert:hover {
+  background: #4b47c4;
+  transform: scale(1.01);
+}
+
+.inactive-button {
+  background: #b9b9b9;
+}
+.inactive-button:hover {
+  background: #858585;
+  transform: scale(1.01);
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes puff-out-center {
+  0% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+    left: 200%;
+  }
+}
+
+.openModal {
+  animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both
+}
+
+.hidden {
+  animation: puff-out-center .5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  /* display: none; */
 }
