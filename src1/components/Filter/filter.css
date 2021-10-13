@@ -6,7 +6,6 @@
     border-radius: 10px;
     border: none;
     margin-bottom: 25px;
-    transition: 1s;
 }
 .open-filters-button:hover{
     background: #ececec;
@@ -20,7 +19,7 @@
     background: #FAFAFA;
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 27px 0 24px 24px;
+    padding: 27px 0 24px 42px;
 }
 
 
@@ -58,7 +57,6 @@
     display: flex;
     justify-content: space-between;
     padding: 4px 10px;
-    transition: 1s;
 }
 
 .container-filters button:hover{
@@ -68,7 +66,6 @@ background: #ececec;
 .container-filters .btnFilterClicked{
     background: #7B61FF;
     color: white;
-    transition: 1s;
 
 }.container-filters .btnFilterClicked:hover{
     background: #533fb8;
@@ -96,7 +93,7 @@ background: #ececec;
     line-height: 11px;
 }
 .div-valor input{
-    width: 12vh;
+    width: 9vh;
     height: 22px;
     background: #FFFFFF;
     border: 1px solid #7B61FF;
@@ -125,7 +122,6 @@ background: #ececec;
 .container-filters .btn-clear-filters{
     background: white;
     color: black;
-    transition: 1s;
 }
 .container-filters .btn-apply-filters:hover{
     background: linear-gradient(264.83deg, #3188cf -3.28%, #04b8af 100%);
@@ -139,7 +135,7 @@ background: #ececec;
     transition-delay: 0.1s;
 }
 .animation{
-    height: 38vh !important;
+    height: 30vh !important;
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }

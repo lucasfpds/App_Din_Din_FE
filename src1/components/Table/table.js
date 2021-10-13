@@ -23,8 +23,8 @@ function Table(props) {
     if(type === 'day'){
         polygonWeekDay===up ? setPolygonWeekDay(down) : setPolygonWeekDay(up);
         orderDocuments(type, polygonWeekDay===up ? "decreasing" : "growing")
-        // setPolygonDate(up)
-        // setPolygonValue(up)
+        setPolygonDate(up)
+        setPolygonValue(up)
     }
     
     if(type === 'value'){

@@ -15,7 +15,6 @@ function transformDate(date){
         console.log(error)
     }
 }
-
 function handleDelete(param1, param2, param3){
     handleRegisterDocument(param1, param2, param3);
     setHidden('hidden')

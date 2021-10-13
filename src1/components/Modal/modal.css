@@ -83,7 +83,6 @@
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  transition: 1s;
 }
 .credit-button:hover {
   background: linear-gradient(91.26deg, #06c7bd 0%, #3187ce 97.77%);
@@ -92,7 +91,6 @@
 .debit-button {
   background: linear-gradient(91.66deg, #fa8c10 0%, #ff576b 90.32%);
   border-radius: 0px 10px 10px 0px;
-  transition: 1s;
 }
 .debit-button:hover {
   background: linear-gradient(91.66deg, #cf740c 0%, #df4a5b 90.32%);
@@ -139,7 +137,6 @@
   width: 236px;
   align-self: center;
   border: none;
-  transition: 1s;
 }
 .btn-insert:hover {
   background: #4b47c4;
@@ -148,7 +145,6 @@
 
 .inactive-button {
   background: #b9b9b9;
-  transition: 1s;
 }
 .inactive-button:hover {
   background: #858585;

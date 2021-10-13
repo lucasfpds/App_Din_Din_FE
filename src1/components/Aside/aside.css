@@ -48,7 +48,6 @@ aside .container-resume {
     border-radius: 5px;
     border: none;
     color: white;
-    transition: 1s;
 }
 .btn-add:hover{    
     background: linear-gradient(91.26deg, #d37811 0%, #d348ae 97.77%);

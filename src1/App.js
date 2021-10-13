@@ -16,7 +16,6 @@ function App() {
   const [modal, setModal] = useState('hidden');
   const [arrFilters, setArrFilters] = useState([]);
 
-  const [docCat, setdocCat] = useState([])
 
   ////////////////////////
   async function listDocuments(){  
@@ -27,7 +26,6 @@ function App() {
     const data = await api.json()
     setDocumentsArr(data)
     setArrFilters(data)
-    setdocCat(data)
     } catch (error) {
       console.log(error)
     }
@@ -47,9 +45,9 @@ async function handleRegisterDocument(body, method, id) {
     if (method === "PUT"){
       url = `https://dindin-api-desafioback.herokuapp.com/transactions/${idDocument}`
     } else if (method === "POST") {
-      url = `https://dindin-api-desafioback.herokuapp.com/transactions`
+      url = `https://dindin-api-desafioback.herokuapp.com/transactions/`
     } else if (method === "DELETE") {
-      url = `https://dindin-api-desafioback.herokuapp.com/transactions/${id}`
+      url = `https://dindin-api-desafioback.herokuapp.com/transactions/${Number(id)}`
     } else {
       return
     }
@@ -62,7 +60,8 @@ async function handleRegisterDocument(body, method, id) {
         },
         body: JSON.stringify(body),
           });
-        await response.json();
+        const data = await response.json();
+        console.log(data)
     } else {
       await fetch(url, {
         method: method
@@ -164,6 +163,8 @@ async function handleRegisterDocument(body, method, id) {
         })
         newDocuments = arr
       }
+
+
       setDocumentsArr(newDocuments)
 
     } catch (error) {
@@ -174,9 +175,14 @@ async function handleRegisterDocument(body, method, id) {
 
   //////////////////////////////////
 
+
+  // const [categories, setCategories] = useState([])
+
   const categories = [];
 
-  docCat.map(e => categories.indexOf(e.category)<0 && categories.push(e.category))
+  documents.map(e => categories.indexOf(e.category)<0 && categories.push(e.category))
+  
+
   
   //////////////////////////////////
   
