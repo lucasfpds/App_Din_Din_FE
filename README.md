@@ -1,3 +1,23 @@
+# DinDin
+
+<p>
+Html | Css | React | JavaScript | NodeJS <br>
+Aplicação para consumo de API no back-end fazendo leitura, criação, atualização e apagando dados em um banco de dados, sempre tratando todos os dados durante esses processos. A aplicação usa vários conceitos do React, todos os componentes e funcionalidades são construidos do zero.
+</p>
+
+[Deploy](https://app-dindin-fe.herokuapp.com/)<br>
+
+<h2>📷 Preview</h2>
+
+<img src="./Desafio-FE-M03.gif">
+
+
+
+
+
+
+
+
 ![](https://i.imgur.com/xG74tOh.png)
 
 # Desafio | Front-end - Módulo 3
