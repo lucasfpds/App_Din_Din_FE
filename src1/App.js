@@ -14,7 +14,6 @@ function App() {
   const [modal, setModal] = useState("hidden");
   const [arrFilters, setArrFilters] = useState([]);
 
-  ////////////////////////
   async function listDocuments() {
     try {
       const api = await fetch(
@@ -31,7 +30,6 @@ function App() {
     }
   }
 
-  ////////////////////////////////
   async function handleRegisterDocument(body, method, id) {
     if (method === "PUT" || method === "POST") {
       if (
@@ -81,8 +79,6 @@ function App() {
     }
   }
 
-  ////////////////////////////////////
-
   useEffect(() => {
     try {
       listDocuments();
@@ -91,7 +87,6 @@ function App() {
     }
   }, []);
 
-  ///////////////////////////////////
   function openModal(param, id) {
     setIdDocument(id);
     if (param === "add") {
@@ -101,7 +96,6 @@ function App() {
     }
   }
 
-  ///////////////////////////////////
   function closeModal(param) {
     if (param === "add") {
       setModal("hidden");
@@ -110,11 +104,8 @@ function App() {
     }
   }
 
-  ///////////////////////////////////
-
   let documents = documentsArr;
 
-  ///////////////////////////////////
   async function applyFilters(filter) {
     await setDocumentsArr(arrFilters);
 
@@ -180,17 +171,11 @@ function App() {
     }
   }
 
-  //////////////////////////////////
-
-  // const [categories, setCategories] = useState([])
-
   const categories = [];
 
   documents.map(
     (e) => categories.indexOf(e.category) < 0 && categories.push(e.category)
   );
-
-  //////////////////////////////////
 
   const days = [
     "Segunda",
