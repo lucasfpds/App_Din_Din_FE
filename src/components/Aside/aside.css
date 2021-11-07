@@ -8,49 +8,49 @@ aside .container-resume {
 }
 
 .container-resume h2 {
-    margin-bottom: 23px;
+  margin-bottom: 23px;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
 }
 
 .container-resume p {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
   display: flex;
   justify-content: space-between;
 }
-.container-resume .saldo{
-    margin-top: 35px;
-    border-top: 1px solid #EAEAEA;
-    padding-top: 16px;
+.container-resume .saldo {
+  margin-top: 35px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 16px;
 }
-.in{
-    color: #645FFB;
+.in {
+  color: #645ffb;
 }
-.out{
-    color: #FA8C10;
+.out {
+  color: #fa8c10;
 }
-.balance{
-    color: #3A9FF1;
+.balance {
+  color: #3a9ff1;
 }
 
-.btn-add{
-    margin-top: 16px;
-    width: 100%;
-    height: 42px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    background: linear-gradient(91.26deg, #FA8C10 0%, #FF57D3 97.77%);
-    border-radius: 5px;
-    border: none;
-    color: white;
-    transition: 1s;
+.btn-add {
+  margin-top: 16px;
+  width: 100%;
+  height: 42px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  background: linear-gradient(91.26deg, #fa8c10 0%, #ff57d3 97.77%);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  transition: 1s;
 }
-.btn-add:hover{    
-    background: linear-gradient(91.26deg, #d37811 0%, #d348ae 97.77%);
-    transform: scale(1.01);
+.btn-add:hover {
+  background: linear-gradient(91.26deg, #d37811 0%, #d348ae 97.77%);
+  transform: scale(1.01);
 }

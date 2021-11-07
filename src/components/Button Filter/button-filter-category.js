@@ -7,34 +7,38 @@ function ButtonFilterCategory(props) {
   const [icon, setIcon] = useState("+");
   const [clickedButton, setClickedButton] = useState("");
 
-
   function handleBtnDay() {
     icon === "+" ? setIcon("x") : setIcon("+");
-    clickedButton === "" ? setClickedButton("btnFilterClicked") : setClickedButton("");
+    clickedButton === ""
+      ? setClickedButton("btnFilterClicked")
+      : setClickedButton("");
   }
 
   function handleClick(day, type) {
-    handleDay(day, type)
-    handleBtnDay()
+    handleDay(day, type);
+    handleBtnDay();
   }
 
-  useEffect(()=>{
-    setIcon("+")
-    setClickedButton("")
-  },[clear])
+  useEffect(() => {
+    setIcon("+");
+    setClickedButton("");
+  }, [clear]);
 
-  useEffect(()=>{
-    setIcon("+")
-    setClickedButton("")
-  },[clearCat])
+  useEffect(() => {
+    setIcon("+");
+    setClickedButton("");
+  }, [clearCat]);
 
   return (
     <button
       id={id}
       className={`container-chip ${clickedButton}`}
-      onClick={e => handleClick(text, type)}
+      onClick={(e) => handleClick(text, type)}
     >
-      {text}<p id={id} className="icon-filter">{icon}</p>
+      {text}
+      <p id={id} className="icon-filter">
+        {icon}
+      </p>
     </button>
   );
 }

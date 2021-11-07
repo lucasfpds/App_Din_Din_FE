@@ -1,81 +1,81 @@
-.table-head{
-    height: 58px;
-    width: 100%;
-    background: #FAFAFA;
-    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.table-head {
+  height: 58px;
+  width: 100%;
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.table-head ul{
-    width: 100%;
-    display: flex;
-    padding: 0 27px;
-    gap: 10px
+.table-head ul {
+  width: 100%;
+  display: flex;
+  padding: 0 27px;
+  gap: 10px;
 }
-.table-head ul li{
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+.table-head ul li {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
 }
 
-.column-date{
-min-width: 10%;
-height: min-content;
-text-align: start !important;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
+.column-date {
+  min-width: 10%;
+  height: min-content;
+  text-align: start !important;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
 }
-.column-week-day{
-min-width: 15%;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
+.column-week-day {
+  min-width: 15%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
-.column-description{
-min-width: 25%;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
+.column-description {
+  min-width: 25%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
-.column-category{
-min-width: 20%;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
+.column-category {
+  min-width: 20%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
-.column-value{
-min-width: 20%;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
+.column-value {
+  min-width: 20%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
-.date{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.date {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.weekDay{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+.weekDay {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
-.value{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+.value {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
