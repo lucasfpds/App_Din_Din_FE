@@ -1,6 +1,6 @@
 import "./table.css";
 import TableBody from "../Table-Body/table-body";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import up from "../../images/Polygon3.svg";
 import down from "../../images/Polygon4.svg";
 

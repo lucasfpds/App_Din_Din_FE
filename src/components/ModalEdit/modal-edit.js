@@ -1,6 +1,6 @@
 import "../Modal/modal.css";
 import btnClose from "../../images/+.svg";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import InputMask from "react-input-mask";
 
 function ModalEdit(props) {

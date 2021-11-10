@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 
 function ButtonFilterCategory(props) {
   const { text, id, handleDay, type, clear, clearCat } = props;

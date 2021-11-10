@@ -1,7 +1,7 @@
 import "./table-body.css";
 import iconEditar from "../../images/icons8-editar3.svg";
 import iconLIxo from "../../images/icons8-lixo1.svg";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 function TableBody(props) {
   const { document, openModal, handleRegisterDocument } = props;
