@@ -48,7 +48,7 @@
   height: 95vh;
   background: #ffffff;
   border-radius: 20px;
-  padding: 61px 64px;
+  padding: 5vh 2vw;
   display: flex;
   flex-direction: column;
 }
@@ -56,20 +56,20 @@
 .close-icon {
   all: unset;
   position: absolute;
-  right: 36.5%;
-  top: 98px;
+  right: 31.5vw;
+  top: 4vh;
   cursor: pointer;
 }
 
 .modal-container h1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3vw;
   line-height: 43px;
-  margin-bottom: 51px;
+  margin-bottom: 4vh;
 }
 .modal-container > div {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
 }
 
 .credit-button,
@@ -77,8 +77,8 @@
   background: linear-gradient(91.26deg, #05ede3 0%, #3a9ff1 97.77%);
   border-radius: 10px 0px 0px 10px;
   border: none;
-  height: 60px;
-  width: 245px;
+  height: 7vh;
+  width: 18vw;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -102,23 +102,21 @@
 .modal-container label {
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 9px;
+  font-size: 2vw;
+  margin-top: 1vh;
 }
 
 .modal-container input {
   width: 100%;
-  height: 63.49px;
+  height: 5vh;
   border: 1px solid #555555;
   box-sizing: border-box;
   border-radius: 5px;
-  margin-bottom: 26px;
 }
 .example {
   font-weight: bold;
   font-size: 15px;
-  margin-top: -5.5%;
-  margin-bottom: 5.6%;
+  margin-bottom: 0;
 }
 
 .warning {
@@ -126,6 +124,7 @@
   color: red;
   font-weight: bold;
   font-size: 20px;
+  margin-top: 2vh;
   margin-bottom: 2%;
 }
 .btn-insert {
@@ -135,7 +134,7 @@
   font-size: 14px;
   line-height: 17px;
   color: white;
-  height: 55px;
+  height: 7vh;
   width: 236px;
   align-self: center;
   border: none;
@@ -192,5 +191,4 @@
 
 .hidden {
   animation: puff-out-center 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
-  /* display: none; */
 }
